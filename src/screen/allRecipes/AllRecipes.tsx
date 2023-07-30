@@ -21,7 +21,6 @@ function AllRecipes() {
 //handle change 
 
     const handleFiltername = (filterType :string, name :string) => {
-        console.log("jaiho " ,filterType , name)
         if(filter[filterType]){
             let obj :any = {...filter}
             delete obj[filterType]
@@ -74,7 +73,7 @@ function AllRecipes() {
 
 
 
-console.log("jaiho state", filter )
+
   return (
     <div className={style.allRecipesWrapper} >
      <div className={style.sideSection}>
