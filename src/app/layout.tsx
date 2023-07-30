@@ -1,6 +1,12 @@
+import Navigation from '@/components/navigationBar/Navigation'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import LinkNav from '@/components/linkNavigation/LinkNav'
+import Header from '@/components/header/Header'
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { Providers } from '@/redux/provider/Provider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +22,30 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Providers>
+       <div><Navigation/></div>
+       <main>
+       <div><Header/></div>
+       <div >
+        <LinkNav/>
+        </div>
+        {children}
+        </main>
+        </Providers>
+        </body>
+        <ToastContainer
+        position="top-center"
+        autoClose={1000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </html>
   )
 }

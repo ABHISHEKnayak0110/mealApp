@@ -1,0 +1,24 @@
+.filterComponentWrapper{
+     .headingFilter{
+      color: black;
+      font-size: 16px;
+      font-weight: 600;
+     }
+     .container{
+        margin: 1% 0% 1% 0%;
+     }
+     .checkboxContainer{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.3%;
+     }
+     .checkBox{
+        border-radius: 2px;
+        margin-right: 10px;
+     }
+     .filterName{
+         color: #7e828a;
+         font-size: 12px;
+         font-weight: 200;
+     }
+}

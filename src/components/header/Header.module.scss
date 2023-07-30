@@ -1,0 +1,29 @@
+.headerWrapper{
+   display: flex;
+   align-items: center;
+   padding: 1% 0;
+    .logoContainer{
+        width: 35%;
+    }
+    .searchContainer{
+        width: 57%;
+    }
+    .logoName{
+        font-size: 24px;
+        font-weight: 300;
+        color: rgb(34, 34, 34);
+    }
+   .otherContainer{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+   }
+   .cartName{
+    font-size: 16px;
+    color: #6b6768;
+    margin-left: 4px;
+   }
+   .line{
+     border: 0.2px solid rgb(207, 206, 206);
+   }
+}
