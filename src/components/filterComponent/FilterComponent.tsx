@@ -20,9 +20,9 @@ function FilterComponent(props : propsFilter) {
       <p className={style.headingFilter}>{props.headingName}:</p>
       <div className={style.container}>
        {
-        props.data?.map((e:any) => {
+        props.data?.map((e:any , i :number) => {
             return (
-                <div className={style.checkboxContainer}>
+                <div className={style.checkboxContainer} key={i}>
                 <input 
                   className={style.checkBox}
                  type="checkbox" 
